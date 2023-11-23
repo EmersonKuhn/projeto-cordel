@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family: xilosa;
+    src: url(../fonte/xilosa.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #f8afb6;
+    --cor2: black;
+    --cor3: white;
+
+    --fonte-padrao: 'Sriracha', sans-serif;
+    --fonte-titulo: 'xilosa'
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; deixar tudo maiúsculo*/
+    font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    height: 97vh;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+}
+
+main {
+    font-family: var(--fonte-padrao);
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.7vw;
+}
+
+section.normal {
+    background-color: var(--cor1);
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.479);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.815);
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.726);
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
